@@ -20,4 +20,4 @@ jobs:
         with:
           context: DockerFolder/
           push: true
-          tags: samsupriyo/imgpyfastapi:$(date +%s)
+          tags: samsupriyo/imgpyfastapi:latest
