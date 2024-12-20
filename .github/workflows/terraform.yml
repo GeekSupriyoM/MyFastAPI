@@ -33,7 +33,6 @@ jobs:
      
     - name: Replace placeholders with secrets
       run: |
-        cd Terraform
         sed -i 's/clientid/${{ secrets.AZURE_CLIENT_ID }}/g' provider.tf
         sed -i 's/clientid/${{ secrets.AZURE_CLIENT_SECRET }}/g' provider.tf
         sed -i 's/clientid/${{ secrets.AZURE_SUBSCRIPTION_ID }}/g' provider.tf
